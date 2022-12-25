@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- END CSS -->
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- END FONTS -->
+
+    <title>Log in</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <div class="blur"></div>
+        <img src="./img/login-img.svg" alt="Homem com uma mala" />
+        <h1>Bem-Vindo de Volta &#128516;</h1>
+      </header>
+
+      <form>
+        <label for="email">Email </label>
+        <input id="email" type="email" placeholder="Email" required />
+
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="Senha" required />
+
+        <button class="btn-login">
+          Entrar
+          <i class="bx bx-chevron-right"></i>
+        </button>
+        <button class="btn-create-account">
+          <img src="./img/google-icon.svg" alt="logo do google" />
+          Entrar com Google
+        </button>
+      </form>
+
+      <a href="./createAccount.html" class="link-create">
+        Novato?
+        <span>Criar uma Conta</span>
+      </a>
+    </main>
+  </body>
+</html>

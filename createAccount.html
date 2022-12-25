@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- END CSS -->
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- END FONTS -->
+
+    <title>Criar Conta</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <header>
+        <div class="blur"></div>
+        <img src="./img/create-img.svg" alt="Homem na bicicleta" />
+        <h1>Vamos Começar &#128526;</h1>
+      </header>
+
+      <form>
+        <label for="name">Nome Completo</label>
+        <input id="name" type="text" placeholder="Nome" required />
+
+        <label for="tel">Celular</label>
+        <input id="tel" type="tel" placeholder="ex: (11) 99999-9999" required />
+
+        <label for="email">Email </label>
+        <input id="email" type="email" placeholder="Email" required />
+
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="Senha" required />
+
+        <button class="btn-login">
+          Criar Conta
+          <i class="bx bx-chevron-right"></i>
+        </button>
+        <button class="btn-create-account">
+          <img src="./img/google-icon.svg" alt="logo do google" />
+          Criar com Google
+        </button>
+      </form>
+
+      <a href="./index.html" class="link-create">
+        Já é um Membro?
+        <span>Entrar</span>
+      </a>
+    </main>
+  </body>
+</html>

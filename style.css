@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #0a0a10;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  max-width: 414px;
+  flex-direction: column;
+  color: white;
+  min-height: 100vh;
+  padding: 50px 20px;
+  align-items: center;
+  gap: 15px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  position: relative;
+}
+
+.blur {
+  width: 350px;
+  max-width: 100%;
+  height: 250px;
+  background-color: white;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.25;
+  filter: blur(24px);
+  border-radius: 100px;
+}
+
+header img {
+  width: 366px;
+  max-width: 100%;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 5px;
+  letter-spacing: 0.5px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  margin-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+
+button {
+  height: 68px;
+  border: none;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.btn-login {
+  background: #d93856;
+  margin-bottom: 14px;
+}
+
+.btn-create-account {
+  background: rgba(255, 255, 255, 0.14);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-create {
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.link-create span {
+  color: rgba(255, 255, 255);
+}
+
+.link-create::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #d93856;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.link-create:hover::after {
+  width: 100%;
+}
